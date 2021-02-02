@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1825D64B25C9AD370051FFDB /* restrosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825D64A25C9AD370051FFDB /* restrosTableViewCell.swift */; };
+		1825D65025C9AEAF0051FFDB /* RestroApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825D64F25C9AEAF0051FFDB /* RestroApi.swift */; };
 		1861C6F025C3C31E003EE447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861C6EF25C3C31E003EE447 /* AppDelegate.swift */; };
 		1861C6F225C3C31E003EE447 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861C6F125C3C31E003EE447 /* SceneDelegate.swift */; };
 		1861C6F425C3C31E003EE447 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861C6F325C3C31E003EE447 /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		1861C6FF25C3C321003EE447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1861C6FD25C3C321003EE447 /* LaunchScreen.storyboard */; };
 		1861C70A25C3C321003EE447 /* Eats_Ios_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861C70925C3C321003EE447 /* Eats_Ios_Tests.swift */; };
 		1861C71525C3C321003EE447 /* Eats_Ios_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861C71425C3C321003EE447 /* Eats_Ios_UITests.swift */; };
+		18D1F01C25C9AB0300F3222F /* Restro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1F01B25C9AB0300F3222F /* Restro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1825D64A25C9AD370051FFDB /* restrosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restrosTableViewCell.swift; sourceTree = "<group>"; };
+		1825D64F25C9AEAF0051FFDB /* RestroApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroApi.swift; sourceTree = "<group>"; };
 		1861C6EC25C3C31E003EE447 /* Eats(Ios).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eats(Ios).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1861C6EF25C3C31E003EE447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1861C6F125C3C31E003EE447 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		1861C71025C3C321003EE447 /* Eats(Ios)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eats(Ios)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1861C71425C3C321003EE447 /* Eats_Ios_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eats_Ios_UITests.swift; sourceTree = "<group>"; };
 		1861C71625C3C321003EE447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D1F01B25C9AB0300F3222F /* Restro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +109,13 @@
 			children = (
 				1861C6EF25C3C31E003EE447 /* AppDelegate.swift */,
 				1861C6F125C3C31E003EE447 /* SceneDelegate.swift */,
-				1861C6F325C3C31E003EE447 /* ViewController.swift */,
-				1861C6F525C3C31E003EE447 /* Main.storyboard */,
+				18D1F02025C9AB5200F3222F /* model */,
+				18D1F01925C9AAB400F3222F /* view */,
+				18D1F01A25C9AAC600F3222F /* controllers */,
 				1861C6FB25C3C321003EE447 /* Assets.xcassets */,
-				1861C6FD25C3C321003EE447 /* LaunchScreen.storyboard */,
 				1861C70025C3C321003EE447 /* Info.plist */,
 				1861C6F825C3C31E003EE447 /* Eats_Ios_.xcdatamodeld */,
+				1825D64A25C9AD370051FFDB /* restrosTableViewCell.swift */,
 			);
 			path = "Eats(Ios)";
 			sourceTree = "<group>";
@@ -129,6 +136,32 @@
 				1861C71625C3C321003EE447 /* Info.plist */,
 			);
 			path = "Eats(Ios)UITests";
+			sourceTree = "<group>";
+		};
+		18D1F01925C9AAB400F3222F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1861C6F525C3C31E003EE447 /* Main.storyboard */,
+				1861C6FD25C3C321003EE447 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		18D1F01A25C9AAC600F3222F /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1861C6F325C3C31E003EE447 /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		18D1F02025C9AB5200F3222F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18D1F01B25C9AB0300F3222F /* Restro.swift */,
+				1825D64F25C9AEAF0051FFDB /* RestroApi.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1825D65025C9AEAF0051FFDB /* RestroApi.swift in Sources */,
+				18D1F01C25C9AB0300F3222F /* Restro.swift in Sources */,
 				1861C6FA25C3C31E003EE447 /* Eats_Ios_.xcdatamodeld in Sources */,
 				1861C6F425C3C31E003EE447 /* ViewController.swift in Sources */,
 				1861C6F025C3C31E003EE447 /* AppDelegate.swift in Sources */,
+				1825D64B25C9AD370051FFDB /* restrosTableViewCell.swift in Sources */,
 				1861C6F225C3C31E003EE447 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
