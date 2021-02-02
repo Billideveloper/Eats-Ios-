@@ -56,9 +56,11 @@ class restroinfoViewController: UIViewController {
     
     @IBAction func booktable(_ sender: Any) {
         
-        self.bookbtn.setTitle("Booked your table ", for: .normal)
+
+        let timestamp = DateFormatter.localizedString(from: NSDate() as Date, dateStyle: .short, timeStyle: .short)
         
-        self.dismiss(animated: true, completion: nil)
+        self.bookbtn.setTitle("Booked your table \(timestamp)", for: .normal)
+        
     }
     
 
