@@ -77,6 +77,31 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let detailVc = storyBoard.instantiateViewController(identifier: "restroinfo") as! restroinfoViewController
+        
+        
+        let selected = restros[indexPath.row]
+            
+        detailVc.restroname = selected.Name
+        detailVc.restrolocation = selected.location
+        detailVc.restroimage = selected.image
+          
+                  if selected.opean == true{
+                      detailVc.restrostatus = "Open"
+                  }else{
+                      detailVc.restrostatus = "Close"
+                  }
+        detailVc.restrotype = selected.type
+            
+            
+    
+        self.navigationController?.pushViewController(detailVc, animated: true)
+    }
+    
     
     
     

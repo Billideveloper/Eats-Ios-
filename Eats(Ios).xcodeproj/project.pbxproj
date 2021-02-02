@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1825D64B25C9AD370051FFDB /* restrosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825D64A25C9AD370051FFDB /* restrosTableViewCell.swift */; };
 		1825D65025C9AEAF0051FFDB /* RestroApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825D64F25C9AEAF0051FFDB /* RestroApi.swift */; };
+		1825D65525C9B7990051FFDB /* restroinfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825D65425C9B7990051FFDB /* restroinfoViewController.swift */; };
 		1861C6F025C3C31E003EE447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861C6EF25C3C31E003EE447 /* AppDelegate.swift */; };
 		1861C6F225C3C31E003EE447 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861C6F125C3C31E003EE447 /* SceneDelegate.swift */; };
 		1861C6F425C3C31E003EE447 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1861C6F325C3C31E003EE447 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		1825D64A25C9AD370051FFDB /* restrosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restrosTableViewCell.swift; sourceTree = "<group>"; };
 		1825D64F25C9AEAF0051FFDB /* RestroApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestroApi.swift; sourceTree = "<group>"; };
+		1825D65425C9B7990051FFDB /* restroinfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restroinfoViewController.swift; sourceTree = "<group>"; };
 		1861C6EC25C3C31E003EE447 /* Eats(Ios).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eats(Ios).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1861C6EF25C3C31E003EE447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1861C6F125C3C31E003EE447 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				1861C6F325C3C31E003EE447 /* ViewController.swift */,
+				1825D65425C9B7990051FFDB /* restroinfoViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				1825D65025C9AEAF0051FFDB /* RestroApi.swift in Sources */,
 				18D1F01C25C9AB0300F3222F /* Restro.swift in Sources */,
 				1861C6FA25C3C31E003EE447 /* Eats_Ios_.xcdatamodeld in Sources */,
+				1825D65525C9B7990051FFDB /* restroinfoViewController.swift in Sources */,
 				1861C6F425C3C31E003EE447 /* ViewController.swift in Sources */,
 				1861C6F025C3C31E003EE447 /* AppDelegate.swift in Sources */,
 				1825D64B25C9AD370051FFDB /* restrosTableViewCell.swift in Sources */,
